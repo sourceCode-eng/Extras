@@ -5,7 +5,7 @@ public class ServerConnectionTest {
     public static void main(String[] args) throws Exception {
         try {
             // create socket connection to server
-            Socket socket = new Socket("192.168.1.12", 1234);
+            Socket socket = new Socket("localhost", 1234);
             OutputStream out = socket.getOutputStream();
             InputStream in = socket.getInputStream();
 
